@@ -1,0 +1,166 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+}
+.body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(9, 132, 227, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 50px 10px rgba(9, 132, 227, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(9, 132, 227, 0.7);
+  }
+}
+/* Navigation */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navigation items */
+.navItem {
+  list-style-type: none;
+  margin-right: 1rem;
+  position: relative;
+}
+
+/* Dropdown toggle button */
+.dropdownToggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: white;
+  padding: 0.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.dropdownList {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  border-top: none;
+  z-index: 1;
+}
+
+/* Dropdown list items */
+.dropdownItem {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* Show dropdown list on hover */
+.navItem:hover .dropdownList {
+  display: block;
+}
+.dropdownItem a {
+  font-size: 1.1rem;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownItem a:hover {
+  background-color: #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 10rem;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-item {
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-item:hover {
+  color: #4dc3fa;
+}
+.navItem a:hover {
+  font-size: 1.2rem;
+}
+.dropdownToggle:hover {
+  font-size: 1.2rem;
+}
+@media (max-width: 767px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .header {
+    text-align: center;
+    justify-content: center;
+  }
+  .navItem {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .dropdownToggle {
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .dropdownList {
+    position: static;
+    display: none;
+  }
+
+  .dropdown:hover .dropdownList {
+    display: block;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}

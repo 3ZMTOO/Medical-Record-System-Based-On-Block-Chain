@@ -1,0 +1,159 @@
+/* Container styles */
+.container {
+  margin: 0 auto;
+  max-width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+/* Left column styles */
+.formContainer {
+  width: 65%;
+  padding: 30px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+
+.title {
+  margin-top: 0;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.formGroup h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  color: #555;
+  width: 100%;
+}
+.h2titles {
+  color: #555;
+  padding-bottom: 5px;
+}
+.formGroup label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #555;
+  padding: 10px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  color: #555;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ddd;
+  border-color: #666;
+}
+
+.formGroup textarea {
+  height: 100px;
+}
+
+/* label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+*/
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #0062cc;
+}
+
+/* Right column styles */
+.aside {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    max-width: 90%;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .containerb {
+    max-width: 95%;
+
+    width: 95%;
+  }
+
+  .formContainer {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    margin-bottom: 20px;
+  }
+  .formGroup input {
+    justify-content: center;
+  }
+  .formGroup {
+    justify-content: center;
+  }
+}
